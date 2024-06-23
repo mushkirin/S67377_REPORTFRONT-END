@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Note</title>
+    <link rel="stylesheet" href="css/edit_note.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-btn" onclick="navigateToMainPage()">&larr;</button>
+        <h1>Edit Note</h1>
+        <div class="form-group">
+            <label for="editNoteTitle">Title:</label>
+            <input type="text" id="editNoteTitle" placeholder="Enter title">
+        </div>
+        <div class="form-group">
+            <label for="editNoteContent">Content:</label>
+            <textarea id="editNoteContent" placeholder="Enter content"></textarea>
+        </div>
+        <div class="button-group">
+            <button class="save-btn" onclick="updateNote()">Save</button>
+            <button class="delete-btn" onclick="deleteNote()">Delete</button>
+        </div>
+    </div>
+    <script src="js/edit_note.js"></script>
+</body>
+</html>

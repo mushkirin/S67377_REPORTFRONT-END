@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyNote - Add Note</title>
+    <link rel="stylesheet" href="css/add_note.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-btn" onclick="navigateToMainPage()">&larr;</button>
+        <h1>EASYNOTE</h1>
+        <div class="form-group">
+            <label for="noteTitle">TITLE :</label>
+            <input type="text" id="noteTitle" placeholder="Enter title">
+        </div>
+        <div class="form-group">
+            <label for="noteContent">Content:</label>
+            <textarea id="noteContent" placeholder="Enter content"></textarea>
+        </div>
+        <div class="button-group">
+            <button class="save-btn" onclick="saveNote()">SAVE</button>
+            <button class="delete-btn" onclick="deleteNote()">DELETE</button>
+        </div>
+    </div>
+    <script src="js/add_note.js"></script>
+</body>
+</html>

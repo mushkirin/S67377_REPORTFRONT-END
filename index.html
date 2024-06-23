@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyNote</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EASYNOTE</h1>
+        <h2>Welcome to EasyNote!</h2>
+        <button class="add-note-btn" onclick="navigateToAddNote()">
+            <img src="img/add.png" alt="Add Note"> Add new note
+        </button>
+        <div class="search-bar">
+            <img src="img/search.png" alt="Search Icon" class="search-icon">
+            <input type="text" id="search" placeholder="Search" oninput="searchNotes()">
+        </div>
+        <div id="notes" class="notes-container"></div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
